@@ -54,7 +54,7 @@
 	<distributionManagement>
     <snapshotRepository>
       <id>nexusdeploymentrepo</id>
-      <url>http://localhost:9081/repository/maven-snapshots/</url>
+      <url>http://localhost:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
 	<repository>
 	  <id>nexusdeploymentrepo</id>
@@ -62,5 +62,17 @@
     </repository>
   
   </distributionManagement>
+	
+	<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ARTIFACTORY-snapshots</name>
+        <url>http://13.232.16.226:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+		<repository>
+	  <id>snapshots</id>
+      <url>http://13.232.16.226:8081/artifactory/libs-release-local/</url>
+    </repository>
+</distributionManagement>
 
 </project>
