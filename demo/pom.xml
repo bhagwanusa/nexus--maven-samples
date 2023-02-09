@@ -36,7 +36,13 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
+<distributionManagement>
+     <repository>
+     <id>suresh-local</id>
+     <name>mvn-suresh-release</name>
+<url>http://13.232.16.226:8082/artifactory/mvn-suresh-release</url>
+  </repository>
+</distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -50,17 +56,4 @@
    			</plugin-->
 		</plugins>
 	</build>
-
-	<distributionManagement>
-    <snapshotRepository>
-      <id>nexusdeploymentrepo</id>
-      <url>http://localhost:9081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-	<repository>
-	  <id>nexusdeploymentrepo</id>
-      <url>http://localhost:9081/repository/maven-releases/</url>
-    </repository>
-  
-  </distributionManagement>
-
 </project>
