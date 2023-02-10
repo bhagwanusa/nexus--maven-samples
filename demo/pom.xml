@@ -37,11 +37,16 @@
 		</dependency>
 	</dependencies>
 <distributionManagement>
-     <repository>
-     <id>suresh-local</id>
-     <name>mvn-suresh-release</name>
-<url>http://13.232.16.226:8082/artifactory/mvn-suresh-release</url>
-  </repository>
+    <repository>
+        <id>central</id>
+        <name>ARTIFACTORY-releases</name>
+        <url>http://13.232.16.226:8081/artifactory/mvn-suresh-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ARTIFACTORY-snapshots</name>
+        <url>http://13.232.16.226:8081/artifactory/mvn-suresh-release</url>
+    </snapshotRepository>
 </distributionManagement>
 	<build>
 		<plugins>
